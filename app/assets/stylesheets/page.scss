@@ -1,0 +1,46 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background: #000000;
+}
+
+#page-wrap {
+	width: 80em;
+	margin: 0 auto;
+}
+
+
+#sheol {
+	display: inline-block;
+	margin-left: 22em;	
+
+}
+
+.trident {
+	margin-top: 3em;
+}
+
+#trident_1 {
+	float: left;
+	display: inline-block;
+}
+
+#trident_2 {
+	float:right;
+	display: inline-block;
+}
+
+#star {
+	background-image: url(Sitra_star.png);
+	background-size: 10em;
+	background-repeat: no-repeat;
+	overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+	height: 10em;
+	width: 10em;
+	display: block;
+	margin-left: 35em;
+	margin-top: 3em;
+}

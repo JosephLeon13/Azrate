@@ -1,0 +1,55 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack: 'UnifrakturMaguntia', cursive;
+$primary-color: #000000;
+
+#page-wrap {
+	width: 80em;
+	margin: 0 auto;
+}
+
+body {
+	overflow: hidden;
+}
+
+.trident_2 {
+	margin-top: -7.5em;
+}
+
+#trident_1 {
+	float: left;
+	display: inline-block;
+}
+
+#trident_2 {
+	float:right;
+	display: inline-block;
+}
+
+.form {
+	font-family: $font-stack;
+	margin: 11em;
+	text-align: center;
+	color: #ffffff;
+}
+
+input[type=text],
+input[type=password] {
+	
+	display: block;
+	height: 2em;
+	margin: 1em auto;
+	border: 0em solid #E6E6E6;
+
+}
+
+.btn-submit{
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 1em;
+	background: #800000;
+	border: 0em, none #800000;	
+	height: 1.8em;
+	font-family: $font-stack;
+}

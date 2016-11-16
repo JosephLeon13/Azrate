@@ -1,0 +1,29 @@
+<div id="page-wrap">
+  <div title='Home' id='trident_1', class= "trident_2"><%= link_to image_tag('Trident.png', height: '150em', width: '140em'), '/' %>  
+  </div>
+  <div title='Log in' id='trident_2', class="trident_2"><%=  link_to image_tag('Trident.png', height: '150em', width: '140em'), '/login' %>
+  </div>
+
+  <div class='form'>
+    <%= form_for(user) do |f| %>
+   <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+    <% end %>
+    <h1>sign up</h1>
+    <%=f.text_field :first_name, :placeholder => 'First name' %>
+    <%=f.text_field :last_name, :placeholder => 'Last name' %>
+    <%=f.text_field :email, :placeholder => 'Email' %>
+    <%=f.password_field :password, :placeholder => 'Password' %>
+    <%=f.password_field :password_confirmation, :placeholder => 'Confirm Password' %>
+    <%=f.submit "sign up", class: 'btn-submit' %>
+    <%end%>
+  </div>
+</div>
